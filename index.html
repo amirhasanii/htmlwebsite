@@ -5,126 +5,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links & Images</title>
+    <link rel="stylesheet" href="assets/css/globalStyle.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./pages/hobbys.html">Hobbys</a></li>
-            <li><a href="./pages/movies.html">Movies</a></li>
-            <li><a href="./pages/about.html">About</a></li>
-            <li><a href="https://theuselessweb.com/"><mark>Click Me</mark></a></li>
-        </ul>
-    </nav>
-    <!-- end navbar -->
-    <hr>
-    <!-- Container -->
-    <section>
-        <h1>Homepage</h1>
-        <img src="./images/first-img.png" alt="" width="300px" height="150px">
-        <div>
-            <h1><b>My favorit food</b></h1>
-            <!-- Unorderet list -->
-            <ul>
-                <li>Pizza</li>
-                <li>Lasagnia</li>
-                <li>Steak</li>
-                <li>Rise</li>
-            </ul>
 
-            <h1><b>Todo List</b></h1>
-            <!-- Ordered list -->
-            <ol>
-                <li>An unordered shopping list of your favorite foods</li>
-                <li>An ordered list of todo’s you need to get done today</li>
-                <li>An unordered list inside of an ordered list, of places you’d like to visit someday</b></li>
-                <li>An ordered list inside of an unordered list, of your all time top 5 favorite video
-                    games or movies</li>
-            </ol>
-
-            <h1><b>Places to visit </b></h1>
-            <!-- Unordered list inside Ordered list -->
-            <ol>
+    <div class="header">
+        <div class="logo">
+            <h1 class="h1-L">MyMovies</h1>
+        </div>
+        <div class="navbar">
+            <ul class="navLinks">
                 <li>
-                    <ul>
-                        <li>New York</li>
-                        <li>Dubai</li>
-                        <li>Spain</li>
-                        <li>Franc</li>
-                        <li>China</li>
-                    </ul>
+                    <a href="index.html">Home</a>
                 </li>
-            </ol>
-
-            <h1><b>My Top 5 Favorite Movies </b></h1>
-            <!-- Ordered list inside Unordered list -->
-            <ul>
                 <li>
-                    <ol>
-                        <li>I am legend</li>
-                        <li>Focus</li>
-                        <li>Joker</li>
-                        <li>6 Underground</li>
-                        <li>San Andreas</li>
-                    </ol>
+                    <a href="./pages/movies.html">Movies</a>
+                </li>
+                <li>
+                    <a href="./pages/singIn.html">Sign In</a>
+                </li>
+                <li>
+                    <a href="./pages/singUp.html">Sign Up</a>
                 </li>
             </ul>
         </div>
-    </section>
-    <!-- end container -->
-    <!-- Footer -->
-    <footer>
-        <hr>
-        <table>
-            <tr>
-                <td>
-                    <ul>
-                        <li>
-                            <h1><strong>My Website</strong></h1>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <h3><strong>Links</strong></h3>
-                        </li>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="books.html">Books</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <h3><strong>Kontakt Us</strong></h3>
-                        <li><strong>Tel:</strong><i>078 123 45 67</i></li>
-                        <li><strong>E-mail:</strong><em>info@gmail.com</em></li>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <h3><strong>Newsleter</strong></h3>
-                        <li>
-                            <form>
-                                <input type="email" placeholder="Your e-mail">
-                                <br>
-                                <button>Subscribe</button>
-                            </form>
-                        </li>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
+    </div>
 
-        </table>
+    <div class="section-intro">
+        <div class="description">
+            <h1 class="h1-xxl">Unlimited movies,
+                <br> TV shows, and more.</h1>
+            <p class="text-xl">Watch anywhere. Cancel anytime.Ready to watch? <br>
+                Enter your email to create or restart your membership.</p>
+            <a href="./pages/singUp.html">
+                <button class="btn-blue">Sign Up</button>
+            </a>
+        </div>
+        <div class="image-desc">
+            <img src="./assets/images/intro-img.png" alt="Movies you should watch" width="600px">
+        </div>
+    </div>
 
-        <!-- HTML Symbol -->
-        <h4>&copy; Amir Hasani 2022</h4>
-    </footer>
+    <div class="section-info">
+        <div class="title">
+            <h1 class="h1-xl">Upcoming Movies</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <a href="./pages/movies.html">
+                        <img class="card-img" src="./assets/images/Joker.jpg" alt="Joker">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p>Joker</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="./pages/movies.html">
+                        <img class="card-img" src="./assets/images/san-andreas.jpeg" alt="San Andreas">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p>San Andreas</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="./pages/movies.html">
+                        <img class="card-img" src="./assets/images/6underground.jpg" alt="6-Undergraound">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p>6Undergraound</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a href="./pages/movies.html">
+                        <img class="card-img" src="./assets/images/I_am_legend_.jpg" alt="I am legend">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p>I am legend</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-testimonial">
+        <div class="testimonial">
+            <p class="text-xxl">
+                The MyMovies platform is very good in content, they update movies, series, documentaries, etc.
+                almost daily.
+                The quality is very good and the prices so far are affordable, I have not found another platform
+                that offers me something better than Netflix, I recommend it 100%
+            </p>
+            <p class="text-right">
+                <strong>- Alex</strong>
+            </p>
+        </div>
+    </div>
+
+    <div class="section-signUp">
+        <div class="signUpContent">
+            <h1>Unlimited movies, TV shows, and more.</h1>
+            <p>Watch anywhere. Cancel anytime.Ready to watch?
+                Enter your email to create or restart your membership.
+            </p>
+        </div>
+        <div class="signUp">
+            <a href="./pages/singUp.html">
+                <button class="btn-white">Sing Up</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-items">
+            <div class="card-footer">
+                <h1 class="h1-xxl logo-footer">MyMovies</h1>
+            </div>
+            <div class="card-footer">
+                <ul class="footerList">
+                    <li>
+                        <h2>
+                            <strong>Links</strong>
+                        </h2>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./pages/movies.html">Movies</a>
+                    </li>
+                    <li>
+                        <a href="./pages/singIn.html">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="./pages/singIn.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <ul class="footerList">
+                    <li>
+                        <h3>Contac Us</h3>
+                    </li>
+                    <li>
+                        <strong>Loc</strong> St.Galen
+                    </li>
+                    <li>
+                        <strong>Tel</strong> 078 123 45 67
+                    </li>
+                    <li>
+                        <strong>E-mail</strong> my-movies@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <ul class="footerList-icons">
+                    <li>
+                        <h3>Follow Us</h3>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/images/instagram.png" alt="Instagram icon" width="32px">
+                        </a>
+                        <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/images/facebook.png" alt="Facebook icon" width="32px">
+                        </a>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <hr>
+            <p>Amir Hasani &copy;</p>
+        </div>
+    </div>
 </body>
 
 </html>

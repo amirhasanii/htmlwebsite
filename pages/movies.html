@@ -5,215 +5,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+    <link rel="stylesheet" href="../assets/css/globalStyle.css">
+    <link rel="stylesheet" href="../assets/css/movies.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="hobbys.html">Hobbys</a></li>
-            <li><a href="movies.html">Movies</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h1>Movies</h1>
-        <hr>
-        <div>
-            <h1>Thriler</h1>
+    <div class="header">
+        <div class="logo">
+            <h1>MyMovie</h1>
         </div>
-        <table>
-            <tr>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/I_am_legend_.jpg" alt="I am legend" width="220"></a>
-                </td>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/Focus.png" alt="I am legend" width="220"></a>
-                </td>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/Joker.jpg" alt="I am legend" width="220"></a>
-                </td>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/6underground.jpg" alt="I am legend" width="220"></a>
-                </td>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/san-andreas.jpeg" alt="I am legend" width="220"></a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="./detail.html"><b>I am legend</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-                <td>
-                    <a href="./detail.html"><b>Focus</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-                <td>
-                    <a href="./detail.html"><b>Joker</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-                <td>
-                    <a href="./detail.html"><b>San Andreas</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-                <td>
-                    <a href="./detail.html"><b>I am legend</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-            </tr>
-
-        </table>
-        <div>
-            <h1>Action</h1>
+        <div class="navbar">
+            <ul class="navLinks">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../pages/movies.html">Movies</a>
+                </li>
+                <li>
+                    <a href="../pages/singIn.html">Sign In</a>
+                </li>
+                <li>
+                    <a href="../pages/singUp.html">Sign Up</a>
+                </li>
+            </ul>
         </div>
-        <table>
-            <tr>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/I_am_legend_.jpg" alt="I am legend" width="220"></a>
-                </td>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/Focus.png" alt="Focus" width="220"></a>
-                </td>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/Joker.jpg" alt="Joker" width="220"></a>
-                </td>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/6underground.jpg" alt="6 Underground" width="220"></a>
-                </td>
-                <td colspan="2">
-                    <a href="detail.html"><img src="../images/san-andreas.jpeg" alt="San Andreas" width="220"></a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="./detail.html"><b>I am legend</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-                <td>
-                    <a href="./detail.html"><b>Focus</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-                <td>
-                    <a href="./detail.html"><b>Joker</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-                <td>
-                    <a href="./detail.html"><b>6 Underground</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-                <td>
-                    <a href="./detail.html"><b>San Andreas</b></a>
-                </td>
-                <td>
-                    <mark>IMDB:8.2</mark>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-                <td colspan="2">
-                    <strong>Thriler</strong>
-                </td>
-            </tr>
+    </div>
+    <div class="section-all">
+        <h1 class="movie-title">Movies</h1>
+        <div class="container">
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/Joker.jpg" alt="Joker" width="200px"></a>
+                </div>
+                <div class="movie-title">
+                    <h4>Joker</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/6underground.jpg" alt="6underground" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>6underground</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/I_am_legend_.jpg" alt="I am a legend" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>I am a legend</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/san-andreas.jpeg" alt="San Andreas" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>San Andreas</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/Focus.png" alt="Focus" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>Focus</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/Joker.jpg" alt="Joker" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>Joker</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/6underground.jpg" alt="6underground" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>6underground</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/I_am_legend_.jpg" alt="I am a legend" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>I am a legend</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/san-andreas.jpeg" alt="San Andreas" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>San Andreas</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <img src="../assets/images/Focus.png" alt="Focus" width="200px">
+                </div>
+                <div class="movie-title">
+                    <h4>Focus</h4>
+                </div>
+            </div>
+            <div class="card-movie">
+                <div class="movie-img">
+                    <a href="../pages/detail.html">
+                        <img src="../assets/images/I_am_legend_.jpg" alt="I am a legend" width="200px">
+                    </a>
+                </div>
+                <div class="movie-title">
+                    <h4>I am a legend</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        </table>
 
 
-    </section>
+    <div class="footer">
+        <div class="footer-items">
+            <div class="card-footer">
+                <h1 class="h1-xxl logo-footer">MyMovies</h1>
+            </div>
+            <div class="card-footer">
+                <ul class="footerList">
+                    <li>
+                        <h2>
+                            <strong>Links</strong>
+                        </h2>
+                    </li>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/movies.html">Movies</a>
+                    </li>
+                    <li>
+                        <a href="../pages/singIn.html">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="../pages/singIn.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <ul class="footerList">
+                    <li>
+                        <h3>Contac Us</h3>
+                    </li>
+                    <li>
+                        <strong>Loc</strong> St.Galen
+                    </li>
+                    <li>
+                        <strong>Tel</strong> 078 123 45 67
+                    </li>
+                    <li>
+                        <strong>E-mail</strong> my-movies@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer">
+                <ul class="footerList-icons">
+                    <li>
+                        <h3>Follow Us</h3>
+                    </li>
+                    <li>
+                        <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/images/instagram.png" alt="Instagram icon" width="32px">
+                        </a>
+                        <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/images/facebook.png" alt="Facebook icon" width="32px">
+                        </a>
+                    </li>
+                    <li>
 
-    <footer>
-        <hr>
-        <table>
-            <tr>
-                <td>
-                    <ul>
-                        <li>
-                            <h3><strong>My Website</strong></h3>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <h3><strong>Links</strong></h3>
-                        </li>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="books.html">Books</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <h3><strong>Kontakt Us</strong></h3>
-                        <li><strong></strong></li>
-                        <li><strong></strong></li>
-                        </li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            <h3><strong>Newsleter</strong></h3>
-                        <li>
-                            <form>
-                                <input type="email" placeholder="Your e-mail"> <button>Subscribe</button>
-                            </form>
-                        </li>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-
-        </table>
-        <!-- HTML Symbol -->
-        <h4>&copy; Amir Hasani 2022</h4>
-    </footer>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <hr>
+            <p>Amir Hasani &copy;</p>
+        </div>
 </body>
+
 
 </html>

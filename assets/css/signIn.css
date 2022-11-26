@@ -1,0 +1,42 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=text], input[type=email],input[type=password],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.btnSignIn{
+    width: 50%;
+    background-color: #3882F6;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    color: white;
+    font-size: large;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.formCard{
+    /* box-shadow: 5px 4px 35px 11px rgba(0,0,0,0.5);  */
+    flex-grow: 1;
+    margin: 5% 30% 5% 30% ;
+    padding: 5% 7% 5% 7% ;
+    border-radius: 8px;
+    background-color: #F9FAF8;
+    
+}
+.text-center{
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}

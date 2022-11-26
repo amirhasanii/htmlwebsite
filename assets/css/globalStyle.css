@@ -1,0 +1,125 @@
+@font-face{
+    font-family:'Roboto';
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: 'Roboto Normal';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+  }
+@font-face{
+    font-family: 'Roboto Italic';
+    src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
+}
+body{
+    margin: 0;
+    font-family: 'Roboto Normal';
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    padding: 40px;
+}
+.logo{
+    flex: 1;
+    margin-left: 12%;
+}
+.navbar{
+    flex: 1;
+    margin-right: 12%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navLinks{
+    float: right;
+}
+.navLinks li{
+    list-style: none;
+    display: inline;
+    padding-right: 10px;
+}
+.footer{
+    background-color: #1F2937;
+    color: white;
+}
+.footer-items{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+.footerCopyright{
+    text-align: center;
+}
+.footerList li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+.footerList-icons li{
+    list-style: none;
+}
+.footerList-icons img{
+    float: left;
+    padding-right:10px ;
+}
+.logo-footer{
+    margin-top: 25%;
+}
+hr{
+    width: 70%;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-right{
+    float: right;
+}
+.text-xxl{
+    font-size: 36px;
+    font-family: 'Roboto Italic',Arial, Helvetica, sans-serif;
+}
+.text-xl{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+.h1-xxl{
+    font-size: 48px;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+    color: #F9FAF8;
+}
+.h1-xl{
+    font-size: 36px;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+}
+.h1-L{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+.btn-blue{
+    background-color: #3882F6;
+    border: none;
+    padding: 7px 20px 7px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+}
+.btn-blue:hover{
+    background-color: white;
+    color: #3882F6;
+}
+.btn-white{
+    background-color: #3882F6;
+    border: 2px solid white;
+    padding: 7px 20px 7px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+}
+.btn-white:hover{
+    background-color:white;
+    color: #3882F6;
+}
