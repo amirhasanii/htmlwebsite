@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">7
     <title>Links & Images</title>
     <link rel="stylesheet" href="assets/css/globalStyle.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -11,11 +12,13 @@
 
 <body>
 
-    <div class="header">
-        <div class="logo">
+
+
+    <header class="header">
+        <article class="logo">
             <h1 class="h1-L">MyMovies</h1>
-        </div>
-        <div class="navbar">
+        </article>
+        <nav class="navbar">
             <ul class="navLinks">
                 <li>
                     <a href="index.html">Home</a>
@@ -30,106 +33,106 @@
                     <a href="./pages/singUp.html">Sign Up</a>
                 </li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-intro">
+            <article class="description">
+                <h1 class="h1-xxl">Unlimited movies,
+                    <br> TV shows, and more.</h1>
+                <p class="text-xl">Watch anywhere. Cancel anytime.Ready to watch? <br>
+                    Enter your email to create or restart your membership.</p>
+                <a href="./pages/singUp.html">
+                    <button class="btn-blue">Sign Up</button>
+                </a>
+            </article>
+            <figure class="image-desc">
+                <img src="./assets/images/intro-img.png" alt="Movies you should watch" width="600px">
+            </figure>
+        </section>
 
-    <div class="section-intro">
-        <div class="description">
-            <h1 class="h1-xxl">Unlimited movies,
-                <br> TV shows, and more.</h1>
-            <p class="text-xl">Watch anywhere. Cancel anytime.Ready to watch? <br>
-                Enter your email to create or restart your membership.</p>
-            <a href="./pages/singUp.html">
-                <button class="btn-blue">Sign Up</button>
-            </a>
-        </div>
-        <div class="image-desc">
-            <img src="./assets/images/intro-img.png" alt="Movies you should watch" width="600px">
-        </div>
-    </div>
+        <section class="section-info">
+            <article class="title">
+                <h1 class="h1-xl">Upcoming Movies</h1>
+            </article>
+            <article class="container">
+                <article class="card">
+                    <figure class="card-header">
+                        <a href="./pages/movies.html">
+                            <img class="card-img" src="./assets/images/Joker.jpg" alt="Joker">
+                        </a>
+                    </figure>
+                    <article class="card-body">
+                        <p>Joker</p>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure class="card-header">
+                        <a href="./pages/movies.html">
+                            <img class="card-img" src="./assets/images/san-andreas.jpeg" alt="San Andreas">
+                        </a>
+                    </figure>
+                    <article class="card-body">
+                        <p>San Andreas</p>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure class="card-header">
+                        <a href="./pages/movies.html">
+                            <img class="card-img" src="./assets/images/6underground.jpg" alt="6-Undergraound">
+                        </a>
+                    </figure>
+                    <article class="card-body">
+                        <p>6Undergraound</p>
+                    </article>
+                </article>
+                <article class="card">
+                    <figure class="card-header">
+                        <a href="./pages/movies.html">
+                            <img class="card-img" src="./assets/images/I_am_legend_.jpg" alt="I am legend">
+                        </a>
+                    </figure>
+                    <article class="card-body">
+                        <p>I am legend</p>
+                    </article>
+                </article>
+            </article>
+        </section>
 
-    <div class="section-info">
-        <div class="title">
-            <h1 class="h1-xl">Upcoming Movies</h1>
-        </div>
-        <div class="container">
-            <div class="card">
-                <div class="card-header">
-                    <a href="./pages/movies.html">
-                        <img class="card-img" src="./assets/images/Joker.jpg" alt="Joker">
-                    </a>
-                </div>
-                <div class="card-body">
-                    <p>Joker</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <a href="./pages/movies.html">
-                        <img class="card-img" src="./assets/images/san-andreas.jpeg" alt="San Andreas">
-                    </a>
-                </div>
-                <div class="card-body">
-                    <p>San Andreas</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <a href="./pages/movies.html">
-                        <img class="card-img" src="./assets/images/6underground.jpg" alt="6-Undergraound">
-                    </a>
-                </div>
-                <div class="card-body">
-                    <p>6Undergraound</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <a href="./pages/movies.html">
-                        <img class="card-img" src="./assets/images/I_am_legend_.jpg" alt="I am legend">
-                    </a>
-                </div>
-                <div class="card-body">
-                    <p>I am legend</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        <section class="section-testimonial">
+            <article class="testimonial">
+                <p class="text-xxl">
+                    The MyMovies platform is very good in content, they update movies, series, documentaries, etc.
+                    almost daily.
+                    The quality is very good and the prices so far are affordable, I have not found another platform
+                    that offers me something better than Netflix, I recommend it 100%
+                </p>
+                <p class="text-right">
+                    <strong>- Alex</strong>
+                </p>
+            </article>
+        </section>
 
-    <div class="section-testimonial">
-        <div class="testimonial">
-            <p class="text-xxl">
-                The MyMovies platform is very good in content, they update movies, series, documentaries, etc.
-                almost daily.
-                The quality is very good and the prices so far are affordable, I have not found another platform
-                that offers me something better than Netflix, I recommend it 100%
-            </p>
-            <p class="text-right">
-                <strong>- Alex</strong>
-            </p>
-        </div>
-    </div>
-
-    <div class="section-signUp">
-        <div class="signUpContent">
-            <h1>Unlimited movies, TV shows, and more.</h1>
-            <p>Watch anywhere. Cancel anytime.Ready to watch?
-                Enter your email to create or restart your membership.
-            </p>
-        </div>
-        <div class="signUp">
-            <a href="./pages/singUp.html">
-                <button class="btn-white">Sing Up</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer-items">
-            <div class="card-footer">
+        <section class="section-signUp">
+            <article class="signUpContent">
+                <h1>Unlimited movies, TV shows, and more.</h1>
+                <p>Watch anywhere. Cancel anytime.Ready to watch?
+                    Enter your email to create or restart your membership.
+                </p>
+            </article>
+            <article class="signUp">
+                <a href="./pages/singUp.html">
+                    <button class="btn-white">Sing Up</button>
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <article class="footer-items">
+            <article class="card-footer">
                 <h1 class="h1-xxl logo-footer">MyMovies</h1>
-            </div>
-            <div class="card-footer">
+            </article>
+            <article class="card-footer">
                 <ul class="footerList">
                     <li>
                         <h2>
@@ -149,8 +152,8 @@
                         <a href="./pages/singIn.html">Sign Up</a>
                     </li>
                 </ul>
-            </div>
-            <div class="card-footer">
+            </article>
+            <article class="card-footer">
                 <ul class="footerList">
                     <li>
                         <h3>Contac Us</h3>
@@ -165,8 +168,8 @@
                         <strong>E-mail</strong> my-movies@gmail.com
                     </li>
                 </ul>
-            </div>
-            <div class="card-footer">
+            </article>
+            <article class="card-footer">
                 <ul class="footerList-icons">
                     <li>
                         <h3>Follow Us</h3>
@@ -183,13 +186,13 @@
 
                     </li>
                 </ul>
-            </div>
-        </div>
-        <div class="footerCopyright">
+            </article>
+        </article>
+        <article class="footerCopyright">
             <hr>
             <p>Amir Hasani &copy;</p>
-        </div>
-    </div>
+        </article>
+    </footer>
 </body>
 
 </html>
