@@ -37,6 +37,11 @@ a{
 .navLinks{
     float: right;
 }
+.navLinks a:hover{
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
 .navLinks li{
     list-style: none;
     display: inline;

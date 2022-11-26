@@ -14,25 +14,26 @@ input[type=text], input[type=email],input[type=password],select {
     box-sizing: border-box;
   }
 
-.btnSignIn{
+.btn-primary{
     width: 50%;
     background-color: #3882F6;
     text-align: center;
     padding: 10px 0px 10px 0px;
     color: white;
     font-size: large;
+    border: none;
     border-radius: 4px;
     margin-top: 20px;
 }
-
+.btn-primary:hover{
+    background-color: #1F2937;
+}
 .formCard{
-    /* box-shadow: 5px 4px 35px 11px rgba(0,0,0,0.5);  */
     flex-grow: 1;
     margin: 5% 30% 5% 30% ;
     padding: 5% 7% 5% 7% ;
     border-radius: 8px;
     background-color: #F9FAF8;
-    
 }
 .text-center{
     text-align: center;
