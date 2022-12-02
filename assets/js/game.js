@@ -5,20 +5,24 @@ function computerPlay() {
 }
 
 let round = parseInt(1),
-    win = "You win",
-    lose = "You lose",
-    tie = "It is a tie";
+    winRock = "You win - Rock beats Scissors",
+    winPaper = "You win - Paper beats Rock",
+    winScissors = "You win - Scissors beats Paper",
+    loseRock = "You lose - Rock beats Scissors",
+    losePaper = "You lose - Paper beats Rock",
+    loseScissors = "You lose - Scissors beats Paper",
+    tie = "It is a tie"
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === "rock") {
         round++
         if (computerSelection === "paper") {
-            playerScore++;
-            return lose;
+            computerScore++;
+            return losePaper;
         } else if (computerSelection === "rock") {
             return tie;
         } else {
             playerScore++;
-            return win;
+            return winRock;
         }
     }
 
@@ -26,10 +30,10 @@ function playRound(playerSelection, computerSelection) {
         round++
         if (computerSelection === "paper") {
             playerScore++;
-            return win;
+            return winScissors;
         } else if (computerSelection === "rock") {
             computerScore++;
-            return lose;
+            return loseRock;
         } else {
             return tie;
         }
@@ -41,16 +45,13 @@ function playRound(playerSelection, computerSelection) {
             return tie;
         } else if (computerSelection === "rock") {
             playerScore++;
-            return win;
+            return winPaper;
         } else {
             computerScore++;
-            return lose;
+            return loseScissors;
         }
     }
 }
-
-
-
 
 let playerScore = parseInt(0);
 let computerScore = parseInt(0);
@@ -60,19 +61,19 @@ function game() {
         const computerSelection = computerPlay();
         console.log('Round Nr: ' + round);
         console.log('Player selected >> ' + playerSelection + ' << Computer selected >> ' + computerSelection + ' <<');
-        console.log(playRound(playerSelection, computerSelection));
-        // console.log('Player pt:' + playerScore + ' Computer pt: ' + computerScore);
+        console.log(playRound(playerSelection, computerSelection) + '');
+        console.log('Scores ' + ' Player ' + playerScore + ' - ' + computerScore + ' Computer ');
 
         if (i === 4) {
             if (playerScore > computerScore) {
                 console.log('==>> GAME OVER <<==');
-                console.log('Congratulations you are the winner ' + ' Player ' + playerScore + ' - ' + ' Computer ' + computerScore);
+                console.log('Congratulations you are the winner ' + ' Player ' + playerScore + ' - ' + computerScore + ' Computer ');
             } else if (playerScore < computerScore) {
                 console.log('==>> GAME OVER <<==');
-                console.log('Sorry you lose the game ' + ' Player ' + playerScore + ' - ' + ' Computer ' + computerScore);
+                console.log('Sorry you lose the game ' + ' Player ' + playerScore + ' - ' + computerScore + ' Computer ');
             } else {
                 console.log('==>> GAME OVER <<==');
-                console.log('It is a tie ' + ' Player ' + playerScore + ' - ' + ' Computer ' + computerScore);
+                console.log('It is a tie ' + ' Player ' + playerScore + ' - ' + computerScore + ' Computer ');
             }
         }
 
