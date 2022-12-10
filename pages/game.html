@@ -6,10 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game</title>
-    <script src="../assets/js/game.js"></script>
+    <link rel="stylesheet" href="../assets/css/game.css">
 </head>
 
 <body>
+    <header>
+        <ul class="game-title">
+            <li>
+                <h1 class="xl-header">The Rock Paper Scissors Game</h1>
+            </li>
+            <li>
+                <p>Reach 5 points to be the winner <br> +1 point for the round winner</p>
+            </li>
+        </ul>
+    </header>
+    <button class="restart" onclick="endGame()">Restart Game</button>
+    <main>
+        <section class="gameResults">
+            <article class="score">
+                <ul class="player">
+                    <li>
+                        <h1 id="player">Player</h1>
+                    </li>
+                    <li>
+                        <h2>POINTS</h2>
+                    </li>
+                    <li>
+                        <h1 id="playerScore"></h1>
+                    </li>
+                    <li>
+                        <h2>Player Selection</h2>
+                    </li>
+                    <li>
+                        <h2 id="playerSelection"></h2>
+                    </li>
+                </ul>
+                <ul class="roundResults">
+                    <li>
+                        <h1>VS</h1>
+                    </li>
+                    <li>
+                        <h2>Round</h2>
+                        <h2 id="round"></h2>
+                    </li>
+                    <li>
+                        <h2>Draw</h2>
+                        <h2 id="draw"></h2>
+                    </li>
+                    <li>
+                        <h2 id="winner"></h2>
+                    </li>
+                    <li>
+                        <button onclick="endGame()" id="restart-game">Play Again </button>
+                    </li>
+                </ul>
+                <ul class="computer">
+                    <li>
+                        <h1 id="computer">Computer</h1>
+                    </li>
+                    <li>
+                        <h2>POINTS</h2>
+                    </li>
+                    <li>
+                        <h1 id="computerScore"></h1>
+                    </li>
+                    <li>
+                        <h2>Computer Selection</h2>
+                    </li>
+                    <li>
+                        <h2 id="computerSelection"></h2>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="player-selections">
+            <button id="rock" class="rock-button"> Rock</button>
+            <button id="paper" class="paper-button">Paper</button>
+            <button id="scissors" class="scissors-button">Scissors </button>
+
+        </section>
+
+    </main>
+    <script type="text/javascript" src="../assets/js/game.js"></script>
 
 </body>
 
