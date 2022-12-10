@@ -22,9 +22,7 @@ function multiply(a, b) {
 function divide(a, b) {
     return a / b;
 }
-// function dot(a, b) {
-//     return a.b;
-// }
+
 function operate(num1, num2, operator) {
     switch (operator) {
         case "+":
@@ -35,8 +33,6 @@ function operate(num1, num2, operator) {
             return multiply(num1, num2);
         case "/":
             return divide(num1, num2);
-        // case ".":
-        //     return dot(num1, num2)
     }
 }
 currentOperand.value = 0;
@@ -47,6 +43,7 @@ let storedNumber = '',
 
 numberButton.forEach((number) => {
     number.addEventListener('click', function () {
+
         storedNumber += number.value;
         currentOperand.value = storedNumber;
         console.log('you clicked nr ', number.value)
@@ -58,10 +55,8 @@ operatorButton.forEach((operator => {
         if (firstNumber && storedNumber) {
             displayResult();
         }
-        // save the first number
         firstNumber = storedNumber;
 
-        // get the operator that was clicked
         clickedOperator = operator.value;
         previousOperand.value = storedNumber + clickedOperator;
         storedNumber = '';
