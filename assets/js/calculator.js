@@ -1,14 +1,23 @@
-const numberButton = document.querySelectorAll('#number');
-const operatorButton = document.querySelectorAll('#operator');
-const clearButton = document.querySelector('.clear');
-const deleteButton = document.querySelector('.delete')
-const showResult = document.querySelector('.result');
-const currentOperand = document.querySelector('.current-operand');
-const previousOperand = document.querySelector('.previous-operand');
-const equalsKey = document.querySelector('.equals-key');
+const buttons = document.querySelectorAll('button');
+const display = document.querySelector('.display');
 
-currentOperand.value = '';
-previousOperand.value = '';
+
+let displayValue = '0',
+    firstOperand = null,
+    secondOperand = null,
+    firstOperator = null,
+    secondOperator = null,
+    result = null;
+
+
+function updateDisplay() {
+
+    display.value = displayValue;
+    if (display.length < 9) {
+        display.value = displayValue.substring(0, 9);
+    }
+}
+updateDisplay();
 
 function add(a, b) {
     return a + b;
@@ -23,6 +32,14 @@ function divide(a, b) {
     return a / b;
 }
 
+function inputDecimal(dot) {
+    if (displayValue === firstOperand || displayValue === secondOperand) {
+        displayValue = '0';
+        displayValue += dot;
+    } else if (!displayValue.includes(dot)) {
+        displayValue += dot;
+    }
+}
 function operate(num1, num2, operator) {
     switch (operator) {
         case "+":
@@ -35,56 +52,114 @@ function operate(num1, num2, operator) {
             return divide(num1, num2);
     }
 }
-currentOperand.value = 0;
-let storedNumber = '',
-    clickedOperator = '',
-    firstNumber = '',
-    result = '';
 
-numberButton.forEach((number) => {
-    number.addEventListener('click', function () {
 
-        storedNumber += number.value;
-        currentOperand.value = storedNumber;
-        console.log('you clicked nr ', number.value)
-    })
-});
-
-operatorButton.forEach((operator => {
-    operator.addEventListener('click', function () {
-        if (firstNumber && storedNumber) {
-            displayResult();
+buttons.forEach((button) => {
+    button.addEventListener('click', function () {
+        if (button.id === 'number') {
+            inputOperand(button.value);
+            updateDisplay()
         }
-        firstNumber = storedNumber;
-
-        clickedOperator = operator.value;
-        previousOperand.value = storedNumber + clickedOperator;
-        storedNumber = '';
-
-        console.log(`First nr ${firstNumber} Stored ${storedNumber}`);
-        console.log(`Clicked operator ${clickedOperator}`);
-
+        else if (button.id === 'operator') {
+            inputOperator(button.value);
+        }
+        else if (button.id === 'equal') {
+            inputEquals();
+            updateDisplay();
+        }
+        else if (button.id === 'decimal') {
+            inputDecimal(button.value);
+            updateDisplay();
+        } else if (button.id === 'clear') {
+            clr();
+            updateDisplay();
+        }
     })
-}))
-equalsKey.addEventListener('click', function () {
-    displayResult();
 });
-function displayResult() {
-    result = operate(parseFloat(firstNumber), parseFloat(storedNumber), clickedOperator)
 
-    currentOperand.value = result;
-    previousOperand.value = firstNumber + ' ' + clickedOperator + ' ' + storedNumber;
-    storedNumber = result;
-    console.log(`First nr ${firstNumber} Stored ${storedNumber}`);
-
+function inputOperand(operand) {
+    if (firstOperator === null) {
+        if (displayValue == '0' || displayValue === 0) {
+            displayValue = operand
+        } else if (displayValue === firstOperand) {
+            displayValue = operand;
+        } else {
+            displayValue += operand;
+        }
+    } else {
+        if (displayValue === firstOperand) {
+            displayValue = operand;
+        } else {
+            displayValue += operand;
+        }
+    }
 }
+function inputOperator(operator) {
+    if (firstOperator != null && secondOperator === null) {
+        secondOperator = operator;
+        secondOperand = displayValue;
+        result = operate(parseFloat(firstOperand), parseFloat(secondOperand), firstOperator);
+        displayValue = roundAccurately(result, 15).toString();
+        firstOperand = displayValue;
+        result = null;
+    } else if (firstOperator != null && secondOperator != null) {
+        secondOperand = displayValue;
+        result = operate(parseFloat(firstOperand), parseFloat(secondOperand), secondOperator);
+        secondOperator = operator;
+        displayValue = roundAccurately(result, 15).toString();
+        firstOperand = displayValue;
+        result = null;
+    } else {
+        firstOperator = operator;
+        firstOperand = displayValue;
+    }
+}
+function inputEquals() {
+    if (firstOperator === null) {
+        displayValue = displayValue;
+    } else if (secondOperator != null) {
+        secondOperand = displayValue;
+        result = operate(parseFloat(firstOperand), parseFloat(secondOperand), secondOperator);
+        if (result === 'lmao') {
+            displayValue = 'lmao';
+        } else {
+            displayValue = roundAccurately(result, 15).toString();
+            firstOperand = displayValue;
+            secondOperand = null;
+            firstOperator = null;
+            secondOperator = null;
+            result = null;
+        }
+    } else {
+        secondOperand = displayValue;
+        result = operate(parseFloat(firstOperand), parseFloat(secondOperand), firstOperator);
+        if (result === 'lmao') {
+            displayValue = 'lmao';
+        } else {
+            displayValue = roundAccurately(result, 15).toString();
+            firstOperand = displayValue;
+            secondOperand = null;
+            firstOperator = null;
+            secondOperator = null;
+            result = null;
+        }
+    }
+}
+
+function roundAccurately(num, places) {
+    return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
+}
+
 function clr() {
-    previousOperand.value = '';
-    currentOperand.value = 0;
-    firstNumber = '';
-    storedNumber = '';
+    displayValue = '0';
+    firstOperand = null;
+    secondOperand = null;
+    firstOperator = null;
+    secondOperator = null;
+    result = null;
 }
 function del() {
-    currentOperand.value = currentOperand.value.slice(0, -1)
+    displayValue = displayValue.slice(0, -1)
+    updateDisplay()
 }
 

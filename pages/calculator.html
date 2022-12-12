@@ -3,27 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="../assets/css/calculator.css">
-
 </head>
 
 <body>
-    <header>
-        <!-- <h1>CALCULATOR</h1> -->
-    </header>
     <main>
         <section class="caluclator">
             <div class="nr-one">
-                <!-- <div class="previous-operand"></div> -->
-                <input type="text" class="previous-operand" disabled>
-                <input type="text" class="current-operand" placeholder="0" disabled>
+                <input type="text" class="display" placeholder="0" disabled>
             </div>
-            <button onclick="clr()" class="ac two-cols bg-light-gray">
+            <button id="clear" class="ac two-cols bg-light-gray">
                 <h1>AC</h1>
             </button>
-            <button onclick="del()" class="addition bg-light-gray">
+            <button id="delete" onclick="del()" class="addition bg-light-gray">
                 <h1>DEL</h1>
             </button>
             <button id="operator" class="bg-orange" value="/">
@@ -71,10 +66,10 @@
             <button id="number" class=" two-cols" value="0">
                 <h1>0</h1>
             </button>
-            <button id="number" value="." id="dot">
+            <button id="decimal" value=".">
                 <h1>.</h1>
             </button>
-            <button class="equals-key result bg-orange" value="=">
+            <button class="result bg-orange" id="equal" value="=">
                 <h1>=</h1>
             </button>
         </section>
