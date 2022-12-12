@@ -1,7 +1,6 @@
 const buttons = document.querySelectorAll('button');
 const display = document.querySelector('.display');
 
-
 let displayValue = '0',
     firstOperand = null,
     secondOperand = null,
@@ -9,9 +8,7 @@ let displayValue = '0',
     secondOperator = null,
     result = null;
 
-
 function updateDisplay() {
-
     display.value = displayValue;
     if (display.length < 9) {
         display.value = displayValue.substring(0, 9);
