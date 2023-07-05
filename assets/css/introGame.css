@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Normal';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto Thin';
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Rancho Regular';
+    src: url(../fonts/Rancho/Rancho-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Aclonica Regular';
+    src: url(../fonts/Aclonica/Aclonica-Regular.ttf);
+}
+
+body {
+    background: rgb(76, 107, 152);
+    background: radial-gradient(circle, rgba(76, 107, 152, 1) 0%, rgba(31, 41, 55, 1) 100%);
+    font-family: 'Rancho Regular';
+}
+
+.intro {
+    text-align: center
+}
+
+.game-title {
+    margin-top: -30px;
+    margin-right: 170px;
+    text-align: center;
+}
+
+.game-title li {
+    margin-top: -20px;
+    list-style: none;
+}
+
+.xl-header {
+    font-size: 65pt;
+    color: white;
+}
+
+p {
+    font-size: 30pt;
+    color: white;
+}
+
+button {
+    font-family: 'Rancho Regular';
+    font-size: 25pt;
+
+    background: radial-gradient(circle, rgba(76, 107, 152, 1) 0%, rgba(31, 41, 55, 1) 100%);
+    border: 10px solid white;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 30px;
+
+    box-shadow: 0 9px #999;
+    transition: all .4s ease-in-out;
+    color: white;
+}
+
+button:hover {
+    box-shadow: 0 9px #999;
+    transition: all .4s ease-in-out;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    transition: .1s;
+}
+
+.restart {
+    background-color: green;
+    width: 140px;
+    height: 60px;
+    font-size: 20pt;
+    border: 1px solid white;
+    border-radius: 0px;
+    box-shadow: 0 5px #999;
+}
+
+.restart:hover {
+    box-shadow: 0 3px #999;
+    transition: all .2s ease-in-out;
+}
+
+
+
+li {
+    display: inline;
+}
