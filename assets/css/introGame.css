@@ -30,16 +30,15 @@ body {
 }
 
 .intro {
-    text-align: center
-}
-
-.game-title {
-    margin-top: -30px;
-    margin-right: 170px;
     text-align: center;
 }
 
-.game-title li {
+.gameTitle {
+    margin-top: 220px;
+    text-align: center;
+}
+
+.gameTitle li {
     margin-top: -20px;
     list-style: none;
 }
@@ -78,23 +77,13 @@ button:active {
     transition: .1s;
 }
 
-.restart {
+.play {
     background-color: green;
-    width: 140px;
-    height: 60px;
-    font-size: 20pt;
+    width: 200px;
+    height: 80px;
+    font-size: 25pt;
     border: 1px solid white;
     border-radius: 0px;
     box-shadow: 0 5px #999;
-}
-
-.restart:hover {
-    box-shadow: 0 3px #999;
-    transition: all .2s ease-in-out;
-}
-
-
-
-li {
-    display: inline;
+    margin-top: 100px;
 }
